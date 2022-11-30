@@ -58,7 +58,7 @@ Restart()
 
     OutputDebug("Starting software...")
     loop {  ; * Run loop
-        Run(PATH, , &Pid)
+        Run(PATH, , , &Pid)
 
         ; If software didn't start, prompt user to retry
         if (!Pid && MsgBox("Failed to start Logitech Gaming Software", "Process Not Started", "RetryCancel Iconx") !== "Retry")
