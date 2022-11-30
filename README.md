@@ -19,8 +19,8 @@ Settings are defined at the beginning of the script as follows:
 
 | Setting | Type | Default | Description |
 | ---: | --- | --- | --- |
-| `TIMEOUT` | Integer | `10240` | The number of milliseconds (roughly) that the script will wait for [LGS](#lgs) to spawn its UI window after the process is started.<br><br>This should be kept fairly high, as the window may take a bit to show up and there isn't much benefit to having a super short timeout (the timeout is at the end of a thread's function and will be bypassed completely if the window spawns sooner). |
-| `PATH` | String | `EnvGet("ProgramFiles") . "\Logitech Gaming Software\LCore.exe"` | The path to the [LGS](#lgs) executable. Used to restart it.<br><br>Change this if you have [LGS](#lgs) installed elsewhere. |
+| `TIMEOUT` | Integer | `10240` | The number of milliseconds (roughly) that the script will wait for [LGS](#lgs) to spawn its UI window after the process is started.<br><details>This should be kept fairly high, as the window may take a bit to show up and there isn't much benefit to having a super short timeout (the timeout is at the end of a thread's function and will be bypassed completely if the window spawns sooner).</details> |
+| `PATH` | String | `EnvGet("ProgramFiles") . "\Logitech Gaming Software\LCore.exe"` | The path to the [LGS](#lgs) executable. Used to restart it.<br><details>Change this if you have [LGS](#lgs) installed elsewhere.</details> |
 | `PROCESS_NAME` | String | `LCore.exe` | The name of [LGS](#lgs)'s process. |
 | `WINDOW_NAME` | String | `Logitech Gaming Software` | The *title* of the window spawned by [LGS](#lgs). |
 
