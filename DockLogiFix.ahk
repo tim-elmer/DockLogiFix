@@ -16,6 +16,10 @@ global WINDOW_NAME := "Logitech Gaming Software"
 
 ; **** END SETTINGS ****
 
+/* 
+    Handle display change message.
+    @returns 0
+ */
 HandleWmDisplayChanged(wParam, lParam, msg, hwnd) {
 	OutputDebug("Display state changed.")
 	CurrentDockState := MonitorGetCount() > 1
